@@ -1,0 +1,55 @@
+/* 링크 */
+@import url("font.css");
+
+/* 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.inner {
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+}
+
+/* 스타일 가이드 */
+:root {
+  --main--blue: rgba(0, 134, 205, 1);
+  --main--sub: rgba(237, 247, 255, 1);
+  --sub-point--red: rgba(232, 71, 71, 1);
+  --sub-point--navy: rgba(44, 28, 184, 1);
+  --sub-point--orange: rgba(255, 176, 65, 1);
+  --sub-point--green: rgba(102, 204, 14, 1);
+  --sub-point--skyblue: rgba(250, 253, 255, 1);
+  --gray-scale--0eee: rgba(238, 238, 238, 1);
+  --gray-scale--1ddd: rgba(221, 221, 221, 1);
+  --gray-scale--2999: rgba(145, 145, 145, 1);
+  --gray-scale--sub-txt666: rgba(105, 105, 105, 1);
+  --gray-scale--main-txt: rgba(51, 51, 51, 1);
+
+  /* Text-size styles */
+  --title--1b: 48px;
+  --title--menub: 20px;
+  --sub--titler: 24px;
+  --sub--titleb: 24px;
+  --menu--sub: 16px;
+  --subpage--title: 36px;
+  --subpage--menu: 24px;
+
+  /* Effect styles */
+  --icon-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  --hover: 0px 0px 20px rgba(0, 134, 205, 0.5);
+}
