@@ -114,6 +114,9 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/p_main/header.css" />
+    <link rel="stylesheet" href="css/p_main/visual.css" />
+    <link rel="stylesheet" href="css/p_main/quickmenu.css" />
+    <link rel="stylesheet" href="css/p_main/servicenow.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -129,7 +132,7 @@
     ></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/p_main/main.js"></script>
   </head>
   <body>
     <!-- 전체 영역 -->
@@ -165,13 +168,127 @@
               ></a>
             </li>
           </ul>
+          <div class="mobile-btn">☰</div>
         </div>
       </header>
       <!-- 비주얼 -->
-       <div class="visual-wrap">
-        <img src="images/banner/main_banner1.jpg" alt="main1">
-       </div>
+      <section class="visual-wrap">
+        <!-- Swiper -->
+        <div class="swiper mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/banner/main_banner1.jpg" alt="main1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner/main_banner2.jpg" alt="main2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner/main_banner3.jpg" alt="main3" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 검색창 -->
+      <section class="search-bar inner">
+        <input
+          type="text"
+          class="search-box"
+          placeholder="찾고 싶은 메뉴를 검색해 보세요"
+        />
+        <button class="search-btn">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="color: rgb(255, 255, 255)"
+          ></i>
+        </button>
+      </section>
+      <!-- 카테고리 -->
+      <section class="category-wrap inner">
+        <ul class="category">
+          <li><a href="#"># 학자금 대출</a></li>
+          <li><a href="#"># 장학금 신청</a></li>
+          <li><a href="#"># 멘토링</a></li>
+          <li><a href="#"># 근로장학금</a></li>
+        </ul>
+      </section>
+      <!-- 퀵메뉴 -->
+      <section class="quick-menu-wrap inner">
+        <ul class="quick-menu">
+          <li>
+            <a href="#">
+              <div class="quick-img">
+                <img src="images/icon/main/main1.png" alt="mainicon1" />
+              </div>
+              <p>장학금 신청</p></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="quick-img">
+                <img src="images/icon/main/main2.png" alt="mainicon2" />
+              </div>
+              <p>학자금 대출 신청</p></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="quick-img">
+                <img src="images/icon/main/main3.png" alt="mainicon3" />
+              </div>
+              <p>멘토링 신청</p></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="quick-img">
+                <img src="images/icon/main/main4.png" alt="mainicon4" />
+              </div>
+              <p>출근부 관리</p></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="quick-img">
+                <img src="images/icon/main/main5.png" alt="mainicon5" />
+              </div>
+              <p>고졸취업지원</p></a
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- 지금 가장 많이 찾는 서비스 -->
+      <section class="service-now-wrap inner">
+        <div class="service-top">
+          <h2>지금 가장 많이 찾는 서비스</h2>
+          <div class="now-swiper-nav">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper nowSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/cardnews/start.png" alt="start" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cardnews/money.png" alt="money" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cardnews/dream.png" alt="dream" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cardnews/happy.png" alt="happy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cardnews/guide.png" alt="guide" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/cardnews/print.png" alt="print" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

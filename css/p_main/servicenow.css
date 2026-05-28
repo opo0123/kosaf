@@ -1,0 +1,47 @@
+/* .service-now-wrap.inner {
+  position: relative;
+  max-width: 1660px;
+  width: 100%;
+  margin-top: 220px;
+  padding-right: 20px;
+  background-color: aliceblue;
+} */
+ /* 전체 */
+.service-now-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 220px;
+  padding-left: clamp(20px, 5vw, 260px);
+}
+/* top */
+.service-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+.service-top h2 {
+  font-size: var(--title--1b);
+}
+/* inner */
+.service-now-wrap.inner {
+  position: relative;
+  max-width: min(1660px, 100%);
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: clamp(20px, 2vw, 60px);
+}
+/* 이미지 */
+.nowSwiper img {
+  border-radius: 20px;
+}
+.now-swiper-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* swiper 기본 absolute 제거 */
+.now-swiper-nav .swiper-button-next,
+.now-swiper-nav .swiper-button-prev {
+  position: static;
+  margin-top: 0;
+}

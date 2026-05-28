@@ -1,0 +1,38 @@
+.quick-menu-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 220px;
+}
+.quick-menu {
+  width: 100%;
+  display: flex;
+  gap: 6%;
+}
+.quick-menu li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc((100% - 24%) / 5);
+}
+.quick-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: var(--icon-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick-img img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+.quick-menu li p {
+  margin-top: 20%;
+  font-size: var(--sub--titleb);
+}
+.quick-img:hover {
+    box-shadow: var(--hover);
+}
