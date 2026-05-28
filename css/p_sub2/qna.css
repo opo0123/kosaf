@@ -1,0 +1,35 @@
+.qna-wrap{
+    margin: 5% 0;
+}
+.qna-wrap .inner{
+    padding: 2%;
+    border-radius: 20px;
+    background-color: var(--main--sub);
+}
+.qna-top-txt{
+    display: flex;
+    justify-content: space-between;
+}
+.qna-top-txt h2{
+    font-size: var(--subpage--title);
+}
+.qna-top-txt p{
+    line-height: 2;
+    font-size: var(--sub--titler);
+    color: var(--gray-scale--sub-txt666);
+}
+.qna-right button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px ;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--main--blue);
+}
+.qna-right button i{
+    font-size: 14px;
+}

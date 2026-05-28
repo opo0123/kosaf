@@ -1,1 +1,40 @@
+/* 헤더 css */
 @import url("../p_main/header.css");
+
+/* css import */
+@import url("tab_content.css");
+@import url("process.css");
+@import url("qna.css");
+
+
+/* 비주얼 영역 */
+.produce-visual{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 32/15;
+   padding-top: 100px;
+}
+
+
+/* 탭 메뉴 */
+.tab-menu-wrap{
+    width: 100%;
+    margin-top: -70px;
+}
+.tab-menuBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-menuBtn li{
+    width: calc(100% / 5);
+    text-align: center;
+}
+.tab-menuBtn li a{
+    display: block;
+    width: 100%;
+    line-height: 70px;
+    border-radius: 20px 20px 0 0;
+    font-size: var(--sub--titleb);
+    background-color: #fff;
+}
