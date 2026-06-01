@@ -1,0 +1,100 @@
+body {
+  background-color: var(--main--sub);
+}
+.container {
+  padding-top: 100px;
+}
+.container .inner {
+  padding: 110px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left h1 {
+  margin-bottom: 10px;
+}
+.left span {
+  color: var(--main--blue);
+}
+.left p {
+  color: var(--gray-scale--sub-txt666);
+}
+
+/* 2번째 그룹 */
+
+/* 왼쪽 구간 */
+.container2 .left {
+  display: flex;
+  gap: 50px;
+}
+
+.container2 .left-text .container2 .inner {
+  display: flex;
+  /* padding: 20px 20px;  */
+}
+
+.inner-left {
+  display: flex;
+  gap: 80px;
+}
+
+.inner-left img {
+  width: 219px;
+  height: 219px;
+  border-radius: 50%;
+}
+
+.user_info .name {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0px;
+}
+
+.user_info .name button {
+  padding: 8px 18px;
+  background-color: var(--main--blue);
+  color: var(--main--sub);
+  border-radius: 50px;
+  border: none;
+}
+
+.user_info .my_button {
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 53px;
+  background-color: var(--main--sub);
+  border-radius: 10px;
+  color: var(--gray-scale--2999);
+  border-color: var(--gray-scale--2999);
+}
+
+.user_info .name h2 {
+  color: var(--gray-scale--main-txt);
+}
+
+.user_info p {
+  color: var(--gray-scale--sub-txt666);
+}
+
+.container2 .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 오른쪽 구간 */
+
+.container2 .inner .right {
+  display: flex;
+  gap: 10px;
+}
+
+.inner-right .card1 {
+  border: solid 1px #dddddd;
+  border-radius: 20px;
+}
+
+.inner-right .card2 {
+  border: solid 1px #dddddd;
+  border-radius: 20px;
+}
