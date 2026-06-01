@@ -5,6 +5,7 @@
 @import url("tab_content.css");
 @import url("process.css");
 @import url("qna.css");
+@import url("res.css");
 
 
 /* 비주얼 영역 */
@@ -12,6 +13,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 32/15;
+    object-fit: cover;
    padding-top: 100px;
 }
 
@@ -36,5 +38,26 @@
     line-height: 70px;
     border-radius: 20px 20px 0 0;
     font-size: var(--sub--titleb);
+    color: var(--gray-scale--main-txt);
     background-color: #fff;
+}
+.tab-menuBtn li:nth-child(1) a.active{
+    color: #fff;
+    background-color: var(--main--blue);
+}
+.tab-menuBtn li:nth-child(2) a.active{
+    color: #fff;
+    background-color: var(--sub-point--green);
+}
+.tab-menuBtn li:nth-child(3) a.active{
+    color: #fff;
+    background-color: var(--sub-point--orange);
+}
+.tab-menuBtn li:nth-child(4) a.active{
+    color: #fff;
+    background-color: var(--sub-point--red);
+}
+.tab-menuBtn li:nth-child(5) a.active{
+    color: #fff;
+    background-color: var(--sub-point--navy);
 }

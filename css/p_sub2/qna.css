@@ -6,15 +6,40 @@
     border-radius: 20px;
     background-color: var(--main--sub);
 }
+/* 페이지별 배경 색 */
+.qna-wrap:nth-child(2) .inner{
+    background-color: rgba(102, 204, 14, 0.2);
+}
+.qna-wrap.qna-wrap3 .inner{
+    background-color: rgba(255, 176, 65, 0.2);
+}
+.qna-wrap.qna-wrap4 .inner{
+    background-color: rgba(232, 71, 71, 0.1);
+}
+.qna-wrap.qna-wrap5 .inner{
+    background-color: rgba(44, 28, 184, 0.2);
+}
+
+.qna-wrap .inner::after{
+    content: "";
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    width: 220px;
+    height: 280px;
+    background: url(../../images/ai/qna.png) no-repeat center / contain;
+    /* background-size: contain; */
+}
 .qna-top-txt{
     display: flex;
     justify-content: space-between;
 }
 .qna-top-txt h2{
     font-size: var(--subpage--title);
+    color: var(--gray-scale--main-txt);
 }
 .qna-top-txt p{
-    line-height: 2;
+    line-height: 2.5;
     font-size: var(--sub--titler);
     color: var(--gray-scale--sub-txt666);
 }
@@ -26,10 +51,142 @@
     padding: 10px 15px ;
     border-radius: 10px;
     border: none;
-    font-size: 20px;
+    font-size: var(--sub2--desc20r);
+    color: #fff;
+    background-color: var(--main--blue);
+    cursor: pointer;
+}
+/* 페이지별 버튼 색 */
+.qna-right.qna-plus1 button{
+    background-color: var(--main--blue);
+}
+.qna-right.qna-plus2 button{
+    background-color: var(--sub-point--green);
+}
+.qna-right.qna-plus3 button{
+    background-color: var(--sub-point--orange);
+}
+.qna-right.qna-plus4 button{
+    background-color: var(--sub-point--red);
+}
+.qna-right.qna-plus5 button{
+    background-color: var(--sub-point--navy);
+}
+/* 페이지별 버튼 색 끝 */
+
+.qna-right button i{
+    font-size: 14px;
+}
+
+/* qna 리스트 */
+.qna-list{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 20px;
+}
+.qna-list li{
+    /* width: 70%; */
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--gray-scale--1ddd);
+    border-radius: 20px;
+    background-color: #fff;
+}
+.qna-list li:nth-child(odd){
+    grid-column: 1;
+}
+.qna-txt-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.qna-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     color: #fff;
     background-color: var(--main--blue);
 }
-.qna-right button i{
-    font-size: 14px;
+
+/* 페이지별 아이콘 배경 색 */
+.qna-icon.icon2{
+    background-color: var(--sub-point--green);
+}
+.qna-icon.icon3{
+    background-color: var(--sub-point--orange);
+}
+.qna-icon.icon4{
+    background-color: var(--sub-point--red);
+}
+.qna-icon.icon5{
+    background-color: var(--sub-point--navy);
+}
+/* 페이지별 아이콘 배경 색 끝 */
+
+.qna-list h4{
+    font-size: var(--title--menub);
+    color: var(--gray-scale--main-txt);
+}
+.qna-list span i{
+    font-size: 20px;
+    color: var(--gray-scale--2999);
+}
+
+/* qna 더보기 설명 */
+.qna-desc{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+}
+.qna-desc-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 2% 3%;
+    border-radius: 20px;
+    color: var(--gray-scale--main-txt);
+    background-color: rgba(0, 134, 205, 0.1);
+}
+
+/* 페이지별 더보기 설명 배경 색 */
+.qna-desc-box.desc2{
+    background-color: rgba(102, 204, 14, 0.2);
+}
+.qna-desc-box.desc3{
+    background-color: rgba(255, 176, 65, 0.2);
+}
+.qna-desc-box.desc4{
+    background-color: rgba(232, 71, 71, 0.1);
+}
+.qna-desc-box.desc5{
+    background-color: rgba(44, 28, 184, 0.2);
+}
+/* 페이지별 더보기 설명 배경 색 끝 */
+
+.qna-desc i{
+    font-size: 24px;
+    color: var(--main--blue);
+}
+.qna-desc-box p b{
+    padding-left: 15px;
+    color: var(--main--blue);
+}
+/* 페이지별 아이콘, 더보기 글씨 색 */
+.desc2 i, .desc2 p b{
+    color: var(--sub-point--green);
+}
+.desc3 i, .desc3 p b{
+    color: var(--sub-point--orange);
+}
+.desc4 i, .desc4 p b{
+    color: var(--sub-point--red);
+}
+.desc5 i, .desc5 p b{
+    color: var(--sub-point--navy);
 }

@@ -1,0 +1,24 @@
+@media(max-width:1000px){
+    /* qna 영역 */
+    .qna-wrap .inner::after{
+        width: 150px;
+        height: 190px;
+    }
+}
+@media(max-width:768px){
+    /* qna 영역 */
+    .qna-wrap .inner{
+        padding: 4%;
+    }
+    .qna-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .qna-wrap .inner::after{
+        display: none;
+    }
+    .qna-desc{
+        display: flex;
+        flex-direction: column;
+    }
+}

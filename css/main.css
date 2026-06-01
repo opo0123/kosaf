@@ -58,6 +58,8 @@ button {
   --menu--sub: 16px;
   --subpage--title: 36px;
   --subpage--menu: 24px;
+  --sub2--desc20r : 20px;
+--sub2--descsmall : 16px; 
 
   /* Effect styles */
   --icon-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
