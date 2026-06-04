@@ -37,6 +37,8 @@
     padding: 3%;
     width: 240px;
     height: 300px;
+    /* max-height: 300px;
+    min-height: 180px; */
     text-align: center;
     border: 1px solid var(--gray-scale--2999);
     border-radius: 20px;
@@ -44,7 +46,8 @@
 }
 .process-list li i{
     padding: 20px 0;
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: clamp(43px, 3vw, 60px);
     color: var(--main--blue);
 }
 .process-list li h3{

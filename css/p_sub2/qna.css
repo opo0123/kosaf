@@ -94,6 +94,7 @@
     border: 1px solid var(--gray-scale--1ddd);
     border-radius: 20px;
     background-color: #fff;
+    cursor: pointer;
 }
 .qna-list li:nth-child(odd){
     grid-column: 1;

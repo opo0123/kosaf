@@ -44,7 +44,7 @@
 
 /* 장학금 리스트 영역 */
 .price-list-wrap{
-    padding: 2% 0;
+    padding: 3% 0;
 }
 .price-list-box{
     padding: 3% 0;
@@ -61,7 +61,6 @@
     gap: 40px;
 }
 .price-list li{
-    /* width: calc(100% / 2); */
     width: 100%;
     height: 350px;
     padding: 5%;
@@ -107,6 +106,7 @@
     cursor: pointer;
     color: var(--main--blue);
     background-color: #fff;
+    transition: all 0.3s;
 }
 .price-btn button i{
     padding-left: 15px;
@@ -115,6 +115,15 @@
 .price-btn button:nth-child(2), .price-btn button:nth-child(2) i{
     border-color: var(--gray-scale--2999);
     color: var(--gray-scale--2999);
+}
+/* 버튼 호버기능 */
+.price-btn button:nth-child(1):hover, .price-btn button:nth-child(1):hover i{
+    color: #fff;
+    background-color: var(--main--blue);
+}
+.price-btn button:nth-child(2):hover, .price-btn button:nth-child(2):hover i{
+    color: #fff;
+    background-color: #999;
 }
 
 /* 페이지 4 신청기간 */
