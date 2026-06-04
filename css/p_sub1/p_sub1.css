@@ -1,10 +1,10 @@
 body {
   background-color: var(--main--sub);
 }
-.container {
+.container1 {
   padding-top: 100px;
 }
-.container .inner {
+.container1 .inner {
   padding: 110px 0px;
   display: flex;
   justify-content: space-between;
@@ -36,12 +36,14 @@ body {
 .inner-left {
   display: flex;
   gap: 80px;
+  align-items: center;
 }
 
 .inner-left img {
   width: 219px;
   height: 219px;
   border-radius: 50%;
+  border: 1px solid #dddddd;
 }
 
 .user_info .name {
@@ -67,34 +69,208 @@ body {
   border-radius: 10px;
   color: var(--gray-scale--2999);
   border-color: var(--gray-scale--2999);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 14px 12.5px;
 }
 
 .user_info .name h2 {
   color: var(--gray-scale--main-txt);
+  font-size: 30px;
 }
 
 .user_info p {
   color: var(--gray-scale--sub-txt666);
+  font-size: 22px;
 }
 
 .container2 .inner {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 50px 70px;
+}
+.container2 {
+  margin-bottom: 110px;
 }
 
 /* 오른쪽 구간 */
 
-.container2 .inner .right {
+.container2 .inner-right {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
 .inner-right .card1 {
   border: solid 1px #dddddd;
   border-radius: 20px;
+  width: 250px;
+  height: 300px;
+  padding: 40px;
+}
+
+.inner-right .card-txt1 {
+  margin-bottom: 9px;
+  font-size: 22px;
+}
+.inner-right .card-txt2 {
+  margin-bottom: 35px;
+  font-size: 16px;
 }
 
 .inner-right .card2 {
   border: solid 1px #dddddd;
   border-radius: 20px;
+  width: 250px;
+  height: 300px;
+  padding: 40px;
 }
+
+.inner-right .card-icon {
+  font-size: 45px;
+  margin-bottom: 29px;
+}
+
+.inner-right button {
+  color: var(--main--blue);
+  background-color: var(--main--sub);
+  border-radius: 10px;
+  border-color: var(--main--blue);
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+}
+
+/* 그룹3 */
+
+.container3 .inner {
+  width: 1400px;
+  height: 600px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 50px 70px;
+}
+
+.container3 .inner .step {
+  display: flex;
+  gap: 30px;
+  color: var(--gray-scale--2999);
+}
+
+.container3 .inner .step i {
+  font-size: 40px;
+}
+
+.container3 .top-txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container3 .top-txt h1 {
+  font-size: 30px;
+  color: var(--gray-scale--main-txt);
+}
+
+.btn-detail {
+  width: 231px;
+  height: 50px;
+  font-size: 18px;
+
+  background-color: var(--main--sub);
+  border-radius: 10px;
+  color: var(--gray-scale--2999);
+  border-color: var(--gray-scale--2999);
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding: 14px 15px;
+}
+
+/* / */
+
+.container3 .inner .step {
+  border: 1px solid #dddddd;
+}
+
+.container3 .inner .step .li span {
+  margin-bottom: 27px;
+}
+
+.application-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 단계 카드 */
+.step {
+  width: 200px;
+  height: 300px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
+
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #888;
+}
+
+/* 현재 진행중 */
+.step.active {
+  border: 2px solid #3b9cff;
+  box-shadow: 0 0 15px rgba(59, 156, 255, 0.3);
+  color: #3b9cff;
+}
+
+.step-number {
+  font-size: 16px;
+  margin-top: 27px;
+}
+
+.step-icon {
+  font-size: 56px;
+}
+
+.step h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.step p {
+  font-size: 13px;
+}
+
+/* 화살표 */
+.arrow {
+  color: #cfcfcf;
+  font-size: 22px;
+}
+
+/* 0604 */
+.top-txt {
+  display: flex;
+  gap: 686px;
+  text-align: center;
+  margin-bottom: 77px;
+}
+.step1-4 {
+  display: flex;
+}
+
+.step1-4 .arrow {
+
+margin: auto 37px;
+
+}
+
+
