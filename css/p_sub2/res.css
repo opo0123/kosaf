@@ -1,4 +1,15 @@
+@media(max-width:1200px){
+    /* 탭 메뉴 영역 */
+    .tab-menuBtn li a{
+        font-size: 14px; /* 글자 크기 줄이기 */
+    }
+}
 @media(max-width:1000px){
+    /* 장학금 리스트 영역 */
+    .price-list{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
     /* 절차 리스트 영역 */
     .process-list{
         flex-wrap: wrap;
@@ -13,6 +24,33 @@
     }
 }
 @media(max-width:768px){
+    /* 비주얼 영역 */
+    .produce-visual{
+        padding-top: 80px !important;
+    }
+    /* 탭 메뉴 리스트 */
+    .tab-menu-wrap {
+        margin-top: -50px !important;
+    }
+    .tab-menuBtn li a{
+        height: 50px !important;
+        line-height: 1 !important;
+        padding-top: 8%;
+        /* border-radius: 12px 12px 0 0 !important; */
+    }
+    /* 장학금 리스트 영역 */
+    .price-icon{
+        width: 80px !important;
+    }
+    .price-icon img{
+        width: 100% !important;
+    }
+    .price-txt p{
+        width: 90%;
+    }
+    .price-btn button{
+        border-radius: 7px;
+    }
     /* 절차 리스트 영역 */
     .process-list{
         display: flex;
@@ -29,11 +67,12 @@
         height: 100%;
         /* height: 250px; */
     }
+    .process-list li p:first-child{
+    text-align: start;
+    white-space: nowrap;
+}
     .process-list li h3{
         padding-bottom: 0;
-    }
-    .process-list li p{
-        text-align: start;
     }
     /* 페이지 4,5 신청기간 */
     .price-date-desc{
@@ -47,8 +86,15 @@
         padding: 4%;
     }
     .qna-list{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        grid-template-columns: 1fr;
+    }
+     .qna-icon {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
     }
     .qna-wrap .inner::after{
         display: none;
@@ -58,7 +104,34 @@
         flex-direction: column;
     }
 }
+@media (max-width: 480px) {
+    /* 탭 메뉴 영역 */
+    .tab-menu-wrap {
+        margin-top: -30px !important;
+    }
+    .tab-menuBtn li a {
+        font-size: 11px !important;
+        height: 30px !important;
+        padding: 0 2px;
+        border-radius: 10px 10px 0 0 !important;
+    }
+    /* 장학금 리스트 영역 */
+    .price-icon{
+        width: 60px !important;
+    }
+    .price-btn{
+        margin-top: 1%;
+    }
+    /* qna 영역 */
+    .qna-desc-box p b{
+        padding-left: 0;
+    }
+}
 @media(max-width:390px){
+    /* 장학금 리스트 영역 */
+    .price-icon{
+        width: 45px !important;
+    }
     /* 절차 리스트 영역 */
     .process-list li{
         padding: 5%;

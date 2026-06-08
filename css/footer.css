@@ -1,5 +1,6 @@
 footer{
     font-weight: 200;
+    word-break: keep-all; /* 어절 단위로만 줄바꿈 */
     background-color: var(--main--blue);
 }
 footer .inner{
@@ -16,7 +17,7 @@ footer .inner{
     min-width: 180px;
 }
 .footer-familySite{
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
     gap: 5%;
@@ -35,7 +36,7 @@ footer .inner{
     width: 100%;
     line-height: 35px;
     display: block;
-    font-size: var(--sub--descsmall);
+    font-size: var(--sub2--descsmall);
     color: #fff;
 }
 
@@ -44,7 +45,7 @@ footer .inner{
     padding: 3% 0;
     line-height: 2;
     font-style: normal;
-    font-size: var(--sub--descsmall);
+    font-size: var(--sub2--descsmall);
     color: #fff;
 }
 
@@ -62,7 +63,7 @@ footer .inner{
     /* justify-content: space-between; */
 }
 .footer-map li a{
-    font-size: var(--sub--descsmall);
+    font-size: var(--sub2--descsmall);
     color: #fff;
 }
 .footer-map li a i{
@@ -106,9 +107,12 @@ footer .inner{
     display: flex;
     gap: 30px;
 }
+.footer-copy-wrap p{
+    font-size: var(--sub2--descsmall);
+}
 .footer-personal li a{
     color: #fff;
-    font-size: var(--sub--descsmall);
+    font-size: var(--sub2--descsmall);
 }
 
 /* 교육부 안내 */
@@ -119,7 +123,7 @@ footer .inner{
     align-items: center;
     gap: 30px;
     border-radius: 5px;
-    font-size: var(--sub--descsmall);
+    font-size: var(--sub2--descsmall);
     background-color: #fff;
 }
 .footer-info-logo{

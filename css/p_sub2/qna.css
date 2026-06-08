@@ -100,9 +100,11 @@
     grid-column: 1;
 }
 .qna-txt-left{
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 5%;
 }
 .qna-icon{
     display: flex;
@@ -110,6 +112,9 @@
     align-items: center;
     width: 45px;
     height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+    flex-shrink: 0;
     border-radius: 50%;
     color: #fff;
     background-color: var(--main--blue);
@@ -151,6 +156,7 @@
     gap: 20px;
     padding: 2% 3%;
     border-radius: 20px;
+    word-break: keep-all; /* 어절 단위로만 줄바꿈 */
     color: var(--gray-scale--main-txt);
     background-color: rgba(0, 134, 205, 0.1);
 }
@@ -173,6 +179,9 @@
 .qna-desc i{
     font-size: 24px;
     color: var(--main--blue);
+}
+.qna-desc-box p{
+    font-size: var(--menu--sub);
 }
 .qna-desc-box p b{
     padding-left: 15px;
