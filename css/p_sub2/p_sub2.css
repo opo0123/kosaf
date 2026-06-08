@@ -35,18 +35,21 @@
 .tab-menuBtn{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 .tab-menuBtn li{
     width: calc(100% / 5);
     text-align: center;
 }
 .tab-menuBtn li a{
-    display: block;
+    display: flex;
+    justify-content: center;   /* ← 가로 중앙 */
+    align-items: center;       /* ← 세로 중앙 (line-height 대신) */
     width: 100%;
     height: 70px;
-    line-height: 3;
+    /* line-height: 3; */
     /* line-height: 70px; */
+    word-break: keep-all; /* 어절 단위로만 줄바꿈 */
     border-radius: 20px 20px 0 0;
     font-size: var(--sub--titleb);
     color: var(--gray-scale--main-txt);
