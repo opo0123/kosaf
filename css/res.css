@@ -20,6 +20,9 @@
   .helpqr-wrap {
     margin-top: 200px;
   }
+  .helpqr-wrap {
+    margin-bottom: 200px;
+  }
   /* 검색창 */
   .search-bar {
     top: -43px;
@@ -70,6 +73,9 @@
   .about-wrap,
   .helpqr-wrap {
     margin-top: 150px;
+  }
+  .helpqr-wrap {
+    margin-bottom: 150px;
   }
   /* header */
   .mobile-btn {
@@ -130,6 +136,9 @@
   .helpqr-wrap {
     margin-top: 100px;
   }
+  .helpqr-wrap {
+    margin-bottom: 100px;
+  }
   /* 모바일 메뉴 */
   .profile-txt span {
     left: 40%;
@@ -176,6 +185,9 @@
   .about-wrap,
   .helpqr-wrap {
     margin-top: 80px;
+  }
+  .helpqr-wrap {
+    margin-bottom: 80px;
   }
 
   /* 검색창 */
