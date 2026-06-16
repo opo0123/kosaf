@@ -18,12 +18,14 @@ body .wrap {
 
 .left h1 {
   margin-bottom: 10px;
+  font-size: var(--subpage--title);
 }
 .left span {
   color: var(--main--blue);
 }
 .left p {
   color: var(--gray-scale--sub-txt666);
+  font-size: var(--sub2--descsmall);
 }
 
 /* 2번째 그룹 */
@@ -65,33 +67,35 @@ body .wrap {
   color: var(--main--sub);
   border-radius: 50px;
   border: none;
+  cursor: pointer;
 }
 
 .user_info .my_button {
   width: 100%;
   max-width: 180px;
   height: 50px;
-  font-size: 18px;
+  font-size: var(--sub2--descsmall);
   margin-top: 53px;
   background-color: #fff;
   border-radius: 10px;
   color: var(--gray-scale--2999);
-  border-color: var(--gray-scale--2999);
+  border: 1px solid var(--gray-scale--2999);
   display: flex;
   justify-content: space-between;
   gap: 4%;
   align-items: center;
   padding: 14px 12.5px;
+  cursor: pointer;
 }
 
 .user_info .name h2 {
   color: var(--gray-scale--main-txt);
-  font-size: 30px;
+  font-size: clamp(12px, 3vw, 30px);
 }
 
 .user_info p {
   color: var(--gray-scale--sub-txt666);
-  font-size: 22px;
+  font-size: var(--subpage--menu);
 }
 
 .container2 .inner {
@@ -129,11 +133,11 @@ body .wrap {
 
 .inner-right .card-txt1 {
   margin-bottom: 3%;
-  font-size: 22px;
+  font-size: var(--sub2--desc20r);
 }
 .inner-right .card-txt2 {
   margin-bottom: 15%;
-  font-size: 16px;
+  font-size: var(--menu--sub);
 }
 
 /* .inner-right .card2 {
@@ -145,7 +149,7 @@ body .wrap {
 } */
 
 .inner-right .card-icon {
-  font-size: 45px;
+  font-size: var(--title--1b);
   margin-bottom: 20%;
 }
 
@@ -153,9 +157,10 @@ body .wrap {
   color: var(--main--blue);
   background-color: #fff;
   border-radius: 10px;
-  border-color: var(--main--blue);
+   border: 1px solid var(--main--blue);
   padding: 8px 24px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* 그룹3 */
@@ -190,11 +195,12 @@ body .wrap {
   background-color: #fff;
   border-radius: 10px;
   color: var(--gray-scale--2999);
-  border-color: var(--gray-scale--2999);
+  border:1px solid var(--gray-scale--2999);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 14px 15px;
+  cursor: pointer;
 }
 
 /* / */
@@ -225,26 +231,16 @@ body .wrap {
   justify-content: center;
   color: #888;
   display: flex;
+  cursor: pointer;
 }
 
 /* step-hover */
-.step:hover {
+.step_hover {
   border: 2px solid #0086cd;
   box-shadow: 0 0 20px #0086cd;
   color: #0086cd;
 }
-.step:hover .step-number {
-  color: #0086cd;
-}
-.step:hover .step-icon {
-  color: #0086cd;
-}
-.step:hover p {
-  color: #0086cd;
-}
-.step:hover h3 {
-  color: #0086cd;
-}
+
 /*  */
 
 .step .line {
@@ -255,7 +251,7 @@ body .wrap {
 }
 
 .step-number {
-  font-size: 16px;
+  font-size: var(--sub2--descsmall);
   margin-bottom: 27px;
 }
 
@@ -270,7 +266,7 @@ body .wrap {
 }
 
 .step p {
-  font-size: 16px;
+  font-size: var(--menu--sub);
 }
 
 .step1-4 {
@@ -299,6 +295,11 @@ body .wrap {
   margin: 110px 0px;
 }
 
+.cap {
+  color: #2f7dd1;
+  -webkit-text-stroke: 5px rgb(255, 255, 255);
+}
+
 .service-card {
   display: flex;
   align-items: center;
@@ -306,8 +307,8 @@ body .wrap {
 
   padding: 22px;
   background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
 
   text-decoration: none;
   color: #222;
@@ -327,7 +328,7 @@ body .wrap {
   justify-content: center;
 
   color: white;
-  font-size: 50px;
+  font-size: var(--title--1b);
   padding: 5%;
   flex-shrink: 0;
 }
@@ -376,6 +377,7 @@ body .wrap {
   justify-content: space-between;
   background-color: var(--main--sub);
   background-color: #fff;
+  padding: 50px;
 }
 
 .app-banner {
@@ -395,7 +397,8 @@ body .wrap {
   max-width: 151px;
   min-width: 100px;
   /* height: 224px; */
-  aspect-ratio: 1/1.6;
+  /* aspect-ratio: 1/1.6; */
+  object-fit: contain;
 }
 
 .banner-content {
